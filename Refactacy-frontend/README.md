@@ -2,22 +2,28 @@
 
 Questo progetto è stato generato con [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
+### Prerequisiti
+Angular 13.3.6
 
-## Directory
+### Istruzioni di installazione
 
-Apri il terminale
-Esegui `cd Refactacy-frontend/refactacy-webapp`
+1. Directory:
+   ```bash 
+   cd Refactacy-frontend/refactacy-webapp
+   
+2. Installare le dipendenze:
+   ```bash 
+   npm install
+   #In caso di errori
+   npm install --force
 
-## Dipendenze
+3. Avviare il server:
+   ```bash
+   ng serve
 
-esegui `npm install`
-In caso di errore, esegui `npm install --force`
-
-## Development server
-
-Esegui `ng serve` 
-
-## webapp
+4. Output atteso:
+   ```bash
+   ** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
 
 Naviga su `http://localhost:4200/`
 
