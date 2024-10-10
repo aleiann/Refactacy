@@ -39,6 +39,8 @@ Di seguito alcuni screenshot dimostrativi del prodotto in funzione:
 ![Demo](documentazione.png)
 
 
-Ecco il link a un video di presentazione: [Link al video!](https://www.youtube.com/watch?v=1Srlgnn9P0w)
+Ecco il link a un video di presentazione: [Link al video!](https://youtu.be/lBKG2NLCfx4)
 
+## Autori
+Alessandro Iannone, Domenico De Gioia, Giuseppe Simone
 
