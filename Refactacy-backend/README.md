@@ -41,10 +41,6 @@ Di seguito i passaggi per installare il progetto localmente.
    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
    * Restarting with stat
    * Debugger is active!
-   
-## Esempio di utilizzo
-
-Di seguito alcuni screenshot dimostrativi del prodotto in funzione:
 
 ![Demo](png/traduzione.png)
 ![Demo](png/documentazione.png)
