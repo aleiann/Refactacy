@@ -31,7 +31,14 @@ Ricorda di rimuovere l'estensione .git quando utilizzi refactacy.
 
 Per poter utilizzare il modello gpt4-o di OpenAI mettiamo a disposizione l'APIKEY da inserire in .env nel backend (come scritto nel README.md del backend): `sk-kleSTW93bSNVqFPto-2YBUC8Ax68q3tgbbTyRgO7shT3BlbkFJdtGvJc_2d6HDWl-sPUqz33r7hBvLc8w89v9AE0zhEA`.
 
-## link di presentazione
+## Esempio di utilizzo
+
+Di seguito alcuni screenshot dimostrativi del prodotto in funzione:
+
+![Demo](traduzione.png)
+![Demo](documentazione.png)
+
 
 Ecco il link a un video di presentazione: [Link al video!](https://www.youtube.com/watch?v=1Srlgnn9P0w)
+
 
