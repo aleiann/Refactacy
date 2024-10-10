@@ -1,22 +1,4 @@
-# REFACTACY
-
-Il progetto "Refactacy" offre una soluzione innovativa che utilizza l’intelligenza artificiale per modernizzare e ottimizzare codice legacy, concentrandosi sulla migrazione automatizzata dal COBOL a Java.
-
-## Indice
-- [Descrizione](#descrizione)
-- [Tecnologie utilizzate](#tecnologie-utilizzate)
-- [Installazione](#installazione)
-- [Esempio di utilizzo](#esempio-di-utilizzo)
-
-## Descrizione
-
-Questo progetto mira a fornire una soluzione innovativa che sfrutta l’intelligenza artificiale per modernizzare e ottimizzare il codice legacy, con particolare attenzione alla migrazione automatizzata dal COBOL a Java. Questo approccio riduce significativamente il tempo e i costi rispetto a una riscrittura manuale, minimizzando il rischio di errori. Il progetto non solo preserva il valore del codice esistente, ma lo rende più moderno e robusto per future evoluzioni aziendali.
-
-## Tecnologie utilizzate
-
-- Linguaggi di programmazione: *Python/HTML/CSS/TypeScript*
-- Framework: *Flask/Angular*
-- API GPT
+# REFACTACY backend
 
 ## Installazione
 
