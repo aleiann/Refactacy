@@ -12,8 +12,3 @@ def ASTGenerator(payload):
     tree = parser.startRule()
     ast = tree.toStringTree(recog=parser)
     return ast
-
-
-
-
-

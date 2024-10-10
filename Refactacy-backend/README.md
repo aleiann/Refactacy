@@ -1,4 +1,24 @@
-# REFACTACY backend
+# REFACTACY
+
+Il progetto "Refactacy" offre una soluzione innovativa che utilizza l’intelligenza artificiale per modernizzare e ottimizzare codice legacy, concentrandosi sulla migrazione automatizzata dal COBOL a Java.
+
+## Indice
+- [Descrizione](#descrizione)
+- [Tecnologie utilizzate](#tecnologie-utilizzate)
+- [Installazione](#installazione)
+- [Esempio di utilizzo](#esempio-di-utilizzo)
+
+## Descrizione
+
+Questo progetto mira a fornire una soluzione innovativa che sfrutta l’intelligenza artificiale per modernizzare e ottimizzare il codice legacy, con particolare attenzione alla migrazione automatizzata dal COBOL a Java. Questo approccio riduce significativamente il tempo e i costi rispetto a una riscrittura manuale, minimizzando il rischio di errori. Il progetto non solo preserva il valore del codice esistente, ma lo rende più moderno e robusto per future evoluzioni aziendali.
+
+## Tecnologie utilizzate
+
+- Linguaggi di programmazione: *Python/HTML/CSS/TypeScript*
+- Framework: *Flask/Angular*
+- API GPT
+
+## Installazione
 
 Di seguito i passaggi per installare il progetto localmente.
 
@@ -6,8 +26,13 @@ Di seguito i passaggi per installare il progetto localmente.
 - Python (3.8+)
 
 ### Istruzioni di installazione
+
+1. Clonare la repository del back-end:
+   ```bash 
+   git clone https://github.com/aleiann/refactacy-be.git
+   cd /refactacy-be
    
-1. Creare un ambiente virtuale:
+2. Creare un ambiente virtuale:
    ```bash 
    # Su Windows
    python -m venv venv
@@ -17,16 +42,11 @@ Di seguito i passaggi per installare il progetto localmente.
    python3 -m venv venv
    source venv/bin/activate
 
-2. Installare le dipendenze:
+3. Installare le dipendenze:
    ```bash
    pip install -r requirements.txt
-
-3. Creare un file .env nella directory principale (Refactacy-backend) ed inserire:
-   ```bash
-   API_KEY=sk-kleSTW93bSNVqFPto-2YBUC8Ax68q3tgbbTyRgO7shT3BlbkFJdtGvJc_2d6HDWl-sPUqz33r7hBvLc8w89v9AE0zhEA
-
    
-3. Attivare il server locale con Flask:
+4. Attivare il server locale con Flask:
    ```bash
    #Su Windows
    python main.py
@@ -34,7 +54,7 @@ Di seguito i passaggi per installare il progetto localmente.
    #Su MacOS
    python3 main.py
 
-4. Output atteso:
+5. Output atteso:
    ```bash
    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
    * Restarting with stat
