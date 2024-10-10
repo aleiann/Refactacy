@@ -1,0 +1,19 @@
+<aside id="sidebar">
+  <ul class="folders">
+    <li *ngFor="let item of contents">
+      <span *ngIf="item.type === 'dir'" (click)="loadFolder(item.path)">
+        📁 {{ item.name }}
+      </span>
+      <span *ngIf="item.type === 'file'" (click)="selectFile(item)">
+        📄 {{ item.name }}
+      </span>
+    </li>
+  </ul>
+  <div *ngIf="pathStack.length > 0">
+    <button (click)="goBack()" style="background-color: #EFEFEF;">⬅️</button>
+  </div>
+  <div id="addRepo">
+    <input [(ngModel)]="repoUrl" placeholder="Inserisci l'URL del repository" />
+    <button (click)="loadRepo()">Carica repository</button>
+  </div>
+</aside>

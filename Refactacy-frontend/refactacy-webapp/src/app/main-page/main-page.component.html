@@ -1,0 +1,28 @@
+<main>
+    <h1 id="title">{{ selectedFileName }}</h1>
+    <p>{{description}}</p>
+
+    <div class="code-container">
+        <div class="code-section" id="code-section">
+            <div class="code-header">
+                <span class="language-label">Cobol</span>
+                <button class="copy-button" (click)="copyCodeCbl()">
+                    <img src="assets/copy.png" alt="Copia codice">
+                </button>
+            </div>
+            <pre><code id="cobolCode">{{ codeContent }}</code></pre>
+        </div>
+
+        <div class="code-section" id="code-section-2">
+            <div class="code-header">
+                <span class="language-label" id="java-label">Java</span>
+                <button id="button-doc-java" (click)="goToDoc()">View Documentation</button>
+                <button class="copy-button" (click)="copyCodeJava()">
+                    <img src="assets/copy.png" alt="Copia codice">
+                </button>
+            </div>
+            <pre><code id="javaCode">{{ JavaCodeContent }}</code></pre>
+            <!--animazione con id id="translateAnimation"-->
+        </div>
+    </div>
+</main>

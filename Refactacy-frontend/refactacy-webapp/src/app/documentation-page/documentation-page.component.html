@@ -1,0 +1,31 @@
+<main>
+    <h1>{{ selectedFileName }}</h1>
+    <p>{{description}}</p>
+    <div class="container">
+        <div class="code-section">
+            <div class="code-header">
+                <span class="language-label" id="java-label">Java</span>
+                <button class="copy-button" (click)="copyCode()">
+                    <img src="assets/copy.png" alt="Copia codice">
+                </button>
+            </div>
+            <pre>
+              <code *ngFor="let line of codeLines; let i = index"
+                    [ngClass]="{
+                      'highlight': isLineInHighlightedMethod(i)
+                    }"
+                    (click)="onMethodClick(i)"
+                    (mouseenter)="onMouseEnterMethod(i)"
+                    (mouseleave)="onMouseLeaveMethod()">
+                {{ line }}
+              </code>
+            </pre>
+        </div>
+
+        <!-- Sezione destra: Descrizione del metodo -->
+        <div class="description-section">
+            <h2 *ngIf="clickedMethodIndex !== null">{{ methods[clickedMethodIndex]?.nameFunction }}</h2>
+            <p *ngIf="clickedMethodIndex !== null">{{ methods[clickedMethodIndex]?.descriptionFunction }}</p>
+        </div>
+    </div>
+</main>

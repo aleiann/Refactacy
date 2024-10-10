@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    /* Usa flexbox per layout orizzontale */
+    justify-content: space-between;
+    /* Spazio tra le sezioni */
+    width: 90%;
+}
+
+.code-section {
+    background-color: var(--grigio-scuro);
+    color: #fff;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 400px;
+    width: 45%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.code-section code {
+    display: block;
+    margin-bottom: 0;
+    line-height: 0.5;
+    margin-left: -100px;
+}
+
+.code-section pre {
+    margin: 0;
+    padding: 0;
+}
+
+.code-section code.highlight {
+    background-color: var(--grigio-chiaro);
+    /* Sfondo magenta semitrasparente per la riga evidenziata */
+    width: 200%;
+    /* Imposta la larghezza al 100% per coprire l'intera sezione */
+    cursor: pointer;
+    color: var(--grigio-scuro);
+}
+
+/* Sezione descrizione a destra */
+.description-section {
+    width: 45%;
+    padding: 20px;
+    background-color: var(--bianco);
+    border-radius: 5px;
+    /* Separatore tra le due sezioni */
+}
+
+/* Barra superiore con linguaggio e pulsante di copia */
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    /* Elementi allineati agli estremi */
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+/* Stile per il label del linguaggio */
+.language-label {
+    font-weight: 400;
+    color: var(--bianco);
+}
+
+/* Pulsante di copia */
+.copy-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.copy-button img {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,76 @@
+{
+    "extensions": [
+        {
+            "extension": ".cbl",
+            "description": ".cbl is the most common extension for COBOL source code files, containing the core logic and structure of the program."
+        },
+        {
+            "extension": ".cob",
+            "description": ".cob is an alternative extension for COBOL source code files, often used interchangeably with .cbl in various development environments."
+        },
+        {
+            "extension": ".cpy",
+            "description": ".cpy is used for COBOL copybook files, which define reusable data structures or sections of code that are included in multiple programs via the COPY directive."
+        },
+        {
+            "extension": ".int",
+            "description": ".int represents intermediate code files generated during the compilation process, containing COBOL code in a partially compiled form for execution or further optimization."
+        },
+        {
+            "extension": ".obj",
+            "description": ".obj refers to object files containing compiled binary code that is ready for linking but not yet executable. These files are generated during the compilation process."
+        },
+        {
+            "extension": ".dll",
+            "description": ".dll is used for Dynamic Link Library files in Windows environments, containing precompiled COBOL routines or functions that can be reused by multiple programs."
+        },
+        {
+            "extension": ".so",
+            "description": ".so refers to shared object files used in Unix/Linux environments, similar to .dll files in Windows, containing precompiled routines that can be dynamically linked at runtime."
+        },
+        {
+            "extension": ".dat",
+            "description": ".dat files are used to store structured information in either binary or text format, often accessed by COBOL programs for file-based input/output operations."
+        },
+        {
+            "extension": ".idx",
+            "description": ".idx files are index files associated with indexed data files, used to improve the efficiency of record retrieval in indexed file structures."
+        },
+        {
+            "extension": ".txt",
+            "description": ".txt is used for plain text files that may store data or configuration information in a simple, human-readable format."
+        },
+        {
+            "extension": ".vsam",
+            "description": ".vsam files are used in IBM mainframe environments, utilizing the Virtual Storage Access Method (VSAM) to manage large and complex datasets."
+        },
+        {
+            "extension": ".lst",
+            "description": ".lst refers to listing files generated during the compilation process, providing detailed output including source code, line numbers, and any compilation errors or warnings."
+        },
+        {
+            "extension": ".log",
+            "description": ".log files capture execution details, error messages, or other runtime information useful for debugging and monitoring program behavior."
+        },
+        {
+            "extension": ".exe",
+            "description": ".exe is the extension for executable files in Windows environments, representing the final compiled and linked COBOL program ready for execution."
+        },
+        {
+            "extension": ".bin",
+            "description": ".bin files are binary executables commonly used in Unix/Linux or mainframe environments to represent compiled COBOL programs."
+        },
+        {
+            "extension": ".run",
+            "description": ".run is used for control files or execution scripts that automate the running of COBOL programs, often in mainframe or legacy systems."
+        },
+        {
+            "extension": ".cmd",
+            "description": ".cmd refers to command script files used to execute COBOL programs or related commands in Windows environments."
+        },
+        {
+            "extension": ".bat",
+            "description": ".bat is used for batch files that contain a series of commands to be executed, often used to run COBOL programs or manage their execution in Windows environments."
+        }
+    ]
+}
