@@ -1,0 +1,236 @@
+/* Importa il font Poppins da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --blu: #004AAD;
+    --magenta: #FF1D67;
+    --grigio-scuro: #606060;
+    --grigio-chiaro: #EFEFEF;
+    --bianco: #fafafa;
+}
+
+/* Imposta Poppins come font predefinito a livello globale */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bianco);
+    margin: 0;
+    /* Rimuove il margine predefinito del body */
+}
+
+h1 {
+    color: var(--blu);
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--blu);
+    font-weight: 300;
+}
+
+/* Stile per l'header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bianco);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    /* Assicura che l'header si sovrapponga agli altri elementi */
+    z-index: 10;
+    /* Porta l'header in primo piano */
+    width: 100%;
+    /* Imposta la larghezza dell'header al 100% della larghezza dello schermo */
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+nav{
+    margin-left: 5%;
+}
+
+/* Stile per il menu di navigazione */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    /* Rimuove il padding predefinito */
+    margin: 0;
+    /* Rimuove il margine predefinito */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--grigio-scuro);
+    transition: color 0.3s;
+    /* Aggiunge una transizione al cambio di colore */
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--magenta);
+}
+
+main {
+    margin-left: 220px;
+    /* Spazio per la sidebar */
+    background-color: var(--bianco);
+    display: flex;
+    /* Imposta il contenitore come flex */
+    flex-direction: column;
+    /* Orienta gli elementi in verticale */
+    align-items: center;
+    /* Allinea gli elementi al centro orizzontalmente */
+    justify-content: center;
+    /* Allinea gli elementi al centro verticalmente */
+    height: calc(100vh - 60px - 40px);
+    /* Altezza dinamica meno l'header (60px) e footer (40px) */
+    overflow-y: auto;
+    /* Mostra la scrollbar verticale se il contenuto supera l'altezza */
+    box-sizing: border-box;
+    /* Include padding nel calcolo della larghezza e altezza */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Gli elementi partono dall'alto e si espandono verso il basso */
+}
+
+main h1 {
+    margin-top: 120px;
+}
+
+main p {
+    width: 80%;
+}
+
+main>* {
+    flex-shrink: 0;
+    /* Evita che gli elementi figli di main si riducano */
+}
+
+aside {
+    width: 180px;
+    /* Larghezza fissa della sidebar */
+    background-color: var(--bianco);
+    padding: 20px;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    /* Fissa la sidebar al lato sinistro */
+    overflow-y: auto;
+    /* Mostra la scrollbar verticale se il contenuto supera l'altezza */
+    overflow-x: hidden;
+    /* Nasconde la scrollbar orizzontale */
+    height: calc(100vh - 60px - 40px);
+    /* Altezza dinamica meno l'header (60px) e footer (40px) */
+}
+
+.folders {
+    margin-top: 60%;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+.file li:hover {
+    color: var(--magenta);
+}
+
+button {
+    background-color: var(--magenta);
+    font-weight: 400;
+    color: var(--bianco);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.username {
+    margin-right: 3%;
+    color: var(--blu);
+    font-weight: 800;
+}
+
+/* Stile per il footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--bianco);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: var(--blu);
+}
+
+/* Personalizza l'intera scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    /* Larghezza della scrollbar */
+     height: 5px;
+}
+
+/* Colore di sfondo della scrollbar (il track) */
+::-webkit-scrollbar-track {
+    background-color: var(--grigio-chiaro);
+    /* Sfondo grigio */
+    border-radius: 10px;
+    /* Arrotonda leggermente il track */
+}
+
+/* Personalizza la "thumb" (la parte che si muove) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--magenta);
+    /* Colore magenta */
+    border-radius: 10px;
+    /* Arrotonda leggermente la barra */
+}
+
+/* Opzionale: Stile della thumb al passaggio del mouse */
+::-webkit-scrollbar-thumb:hover {
+    background-color: darken(var(--magenta), 10%);
+    /* Colore magenta leggermente più scuro al passaggio del mouse */
+}
+
+/* Overlay che copre l'intera schermata */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Sfondo trasparente nero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Porta la modale sopra gli altri elementi */
+}
+
+/* Contenuto della modale */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
