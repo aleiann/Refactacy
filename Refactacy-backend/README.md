@@ -22,7 +22,8 @@ Di seguito i passaggi per installare il progetto localmente.
    pip install -r requirements.txt
 
 3. Creare un file .env nella directory principale (Refactacy-backend) ed inserire:
-   ```API_KEY=sk-kleSTW93bSNVqFPto-2YBUC8Ax68q3tgbbTyRgO7shT3BlbkFJdtGvJc_2d6HDWl-sPUqz33r7hBvLc8w89v9AE0zhEA
+   ```bash
+   API_KEY=sk-kleSTW93bSNVqFPto-2YBUC8Ax68q3tgbbTyRgO7shT3BlbkFJdtGvJc_2d6HDWl-sPUqz33r7hBvLc8w89v9AE0zhEA
 
    
 3. Attivare il server locale con Flask:
