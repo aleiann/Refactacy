@@ -35,8 +35,8 @@ Per poter utilizzare il modello gpt4-o di OpenAI mettiamo a disposizione l'APIKE
 
 Di seguito alcuni screenshot dimostrativi del prodotto in funzione:
 
-![Demo](traduzione.png)
-![Demo](documentazione.png)
+![Demo](ScreenPaginaTraduzione.png)
+![Demo](ScreenPaginaDocumentazione.png)
 
 
 Ecco il link a un video di presentazione: [Link al video!](https://youtu.be/lBKG2NLCfx4)
