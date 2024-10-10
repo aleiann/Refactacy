@@ -27,8 +27,14 @@ Di seguito i passaggi per installare il progetto localmente.
 3. Installare le dipendenze:
    ```bash
    pip install -r requirements.txt
+
+4. Creare file .env nella root principale (Refactacy-backend)
+
+5. Inserire l'api key in .env:
+   ```bash
+   API_KEY=sk-kleSTW93bSNVqFPto-2YBUC8Ax68q3tgbbTyRgO7shT3BlbkFJdtGvJc_2d6HDWl-sPUqz33r7hBvLc8w89v9AE0zhEA
    
-4. Attivare il server locale con Flask:
+6. Attivare il server locale con Flask:
    ```bash
    #Su Windows
    python main.py
@@ -36,7 +42,7 @@ Di seguito i passaggi per installare il progetto localmente.
    #Su MacOS
    python3 main.py
 
-5. Output atteso:
+7. Output atteso:
    ```bash
    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
    * Restarting with stat
